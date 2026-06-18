@@ -1,7 +1,6 @@
 //import necessary package classes to perform file operations
 
 import java.io.File;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -92,7 +91,7 @@ public class FileManager {
         System.out.println("Last Modified: "+ textFile.lastModified());
     }
 
-    // methods to save date to a file
+    // methods to save date to a binary file
     public void saveToBinaryFile(ArrayList<Student> students) {
 
         try {
@@ -157,7 +156,7 @@ public class FileManager {
 
     }
 
-
+    // method to save student objects using serialization
     public void saveObjects(ArrayList<Student> students) {
 
         try {
@@ -179,7 +178,7 @@ public class FileManager {
 
     }
 
-
+    // method to load serialized student objects
     @SuppressWarnings("unchecked")
     public ArrayList<Student> loadObjects() {
 
