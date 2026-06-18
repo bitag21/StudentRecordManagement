@@ -144,10 +144,11 @@ public class Main {
 
         Student s = manager.searchStudent(id);
 
-        if (s != null)
+        if (s != null){
             System.out.println(s);
-        else
+        }else{
             System.out.println("Student not found.");
+        }
     }
 
     // update student
@@ -167,10 +168,11 @@ public class Main {
         double gpa = input.nextDouble();
         input.nextLine();
 
-        if (manager.updateStudent(id, name, dept, gpa))
+        if (manager.updateStudent(id, name, dept, gpa)){
             System.out.println("Updated successfully.");
-        else
+        }else{
             System.out.println("Student not found.");
+        }
     }
 
     // delete student
@@ -180,9 +182,10 @@ public class Main {
         int id = input.nextInt();
         input.nextLine();
 
-        if (manager.deleteStudent(id))
+        if (manager.deleteStudent(id)){
             System.out.println("Deleted successfully.");
-        else
+        }else{
             System.out.println("Student not found.");
+        }
     }
 }
