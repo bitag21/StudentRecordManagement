@@ -1,0 +1,41 @@
+Student Record Management System
+
+This project is a Java-based system for managing student records.
+
+It allows the user to:
+- Add students
+- Search students by ID
+- Update student details
+- Delete students
+- Display all students
+- Generate a report (highest GPA, lowest GPA, average GPA)
+
+Object-Oriented Design:
+The system is structured using separate classes:
+- Student (model class)
+- StudentManager (business logic)
+- FileManager (file operations)
+- Main (user interface / menu system)
+
+The system uses Java File I/O features:
+
+1. Text File Storage
+   - Uses Scanner and PrintWriter
+
+2. Binary File Storage
+   - Uses DataInputStream and DataOutputStream
+
+3. Object Serialization
+   - Uses ObjectInputStream and ObjectOutputStream
+
+Other Features:
+- Automatically creates a folder called StudentRecords
+- Displays file information (name, path, size, last modified)
+- Creates backup using Buffered Streams
+
+How to run:
+- Run Main.java
+- Use menu options to interact with the system
+
+Note:
+All data is stored inside the StudentRecords folder, which is created automatically when the program runs.
